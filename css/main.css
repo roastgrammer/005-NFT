@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+  * body {
+    background-color: #0d192b; }
+  * main .general {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  * main .main-box {
+    width: 35%;
+    padding: 15px;
+    background-color: #14253d;
+    border-radius: 10px; }
+    * main .main-box .img-part {
+      background-image: url("../images/icon-view.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #00fff7;
+      border-radius: 5px;
+      cursor: pointer; }
+      * main .main-box .img-part img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px; }
+        * main .main-box .img-part img:hover {
+          opacity: 0.3; }
+  * main .text-part {
+    color: #ffffff;
+    font-family: 'Outfit' , sans-serif;
+    margin: 1rem 0; }
+    * main .text-part h3 {
+      cursor: pointer;
+      width: 55%; }
+      * main .text-part h3:hover {
+        transition: .5s;
+        color: #00fff7; }
+    * main .text-part #describe {
+      color: #8bacda;
+      margin: 1rem 0; }
+    * main .text-part .down {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #2f415b;
+      margin: 1.5rem 0;
+      padding-bottom: 1rem; }
+      * main .text-part .down img {
+        position: relative;
+        top: 2px; }
+      * main .text-part .down .one p {
+        color: #00fff7; }
+      * main .text-part .down .two p {
+        color: #8bacda; }
+        * main .text-part .down .two p img {
+          width: 15px; }
+  * main .profile {
+    display: flex;
+    justify-content: space-around; }
+    * main .profile .avatar img {
+      width: 3.5rem;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      cursor: pointer; }
+      * main .profile .avatar img:hover {
+        transition: .3s;
+        border: 1px solid #00fff7; }
+    * main .profile .information {
+      display: flex;
+      align-items: center; }
+      * main .profile .information .vertical p {
+        font-family: 'Outfit' ,sans-serif;
+        font-weight: 400;
+        color: #8bacda; }
+        * main .profile .information .vertical p span {
+          cursor: pointer; }
+          * main .profile .information .vertical p span:hover {
+            transition: .5s;
+            color: #00fff7; }
+
+@media screen and (max-width: 991px) {
+  .main-box {
+    transition: .3s;
+    width: 45% !important; } }
+
+@media screen and (max-width: 767px) {
+  .main-box {
+    width: 60% !important; } }
+
+@media screen and (max-width: 585px) {
+  .main-box {
+    width: 90% !important; }
+  .text h3 {
+    width: 65% !important; } }
